@@ -1,6 +1,5 @@
 from time import sleep
 from os import system
-from subprocess import call
 
 sleepTime = int(input("What do yo want change your IP? just write number [1,3600]: "))
 
@@ -21,6 +20,7 @@ def changeIP():
 
 
 def main():
+    enable()
     changeIP()
 
 
