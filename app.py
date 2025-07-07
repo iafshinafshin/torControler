@@ -15,7 +15,8 @@ def changeIP():
         # system(
         #     'echo "IP : $(curl --socks5-hostname localhost:9050 https://api.ipify.org; echo)"'
         # )
-        system('echo "IP : $(torsocks wget -qO - https://api.ipify.org; echo)"')
+        system('echo "IP : $(proxychains wget -qO - https://api.ipify.org; echo)"')
+        # system('echo "IP : $(torsocks wget -qO - https://api.ipify.org; echo)"')
         sleep(sleepTime)
 
 
